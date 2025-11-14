@@ -7,26 +7,9 @@ from dateutil import parser
 from datetime import timezone, timedelta
 
 # ----------------- Configuration -----------------
-RSS_CONTENT = """<?xml version="1.0" encoding="UTF-8"?>
-                <rss version="2.0">
-                <channel>
-                    <title>AWS Service Health - Invocation delays and elevated error rates for Lambda in the US-WEST-2 Region</title>
-                    <link>https://status.aws.amazon.com/rss/Lambda-us-west-2.rss</link>
-                    <description>Updates on the health of AWS Lambda in US West (Oregon)</description>
-                    <language>en-us</language>
-                    <pubDate>Thu, 06 Nov 2025 09:00:00 CST</pubDate>
-                    <lastBuildDate>Thu, 06 Nov 2025 10:30:00 CST</lastBuildDate>
-                    <item>
-                    <title>Service Resolved: Invocation delays and elevated error rates for Lambda in the US-WEST-2 Region</title>
-                    <link>https://status.aws.amazon.com/#Lambda-us-west-2</link>
-                    <description>We are investigating increased invocation latency and elevated error rates affecting AWS Lambda in the US-WEST-2 Region. Mitigation efforts are underway.</description>
-                    <pubDate>Thu, 06 Nov 2025 09:45:00 CST</pubDate>
-                    <guid>https://status.aws.amazon.com/#Lambda-us-west-2-20251106094500</guid>
-                    </item>
-                </channel>
-                </rss>"""
+RSS_CONTENT = "https://status.aws.amazon.com/rss/all.rss"
 
-TOKEN_URL = "https://preprod.ustsmartops.ai/paas/itops/keycloak/auth/realms/cloudopsbcbsa/protocol/openid-connect/token"
+TOKEN_URL = "ttps://pfm.ustsmartops.ai/paas/bcbsaitops/keycloak/auth/realms/cloudopsbcbsa/protocol/openid-connect/token"
 ALERT_API_URL = "https://preprod.ustsmartops.ai/paas/itops/alertmapping/api/invokerealtime"
 CORRELATION_FILE = "correlation_ids.json"
 
