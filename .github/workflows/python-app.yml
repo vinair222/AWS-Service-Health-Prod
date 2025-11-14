@@ -2,7 +2,7 @@ name: Python Script Runner
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # Runs every 30 minutes
+    - cron: "*/10 * * * *"  # Runs every 30 minutes
   push:
     branches: [ main ]
 
